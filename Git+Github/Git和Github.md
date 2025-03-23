@@ -82,7 +82,7 @@ Git一个版本控制软件，Git可以在本地托管项目代码，并且通�
 
    **基本流程**：将Github仓库克隆(下载)到本地---修改文件并上传(覆盖)Git仓库---提交到远程仓库
 
-   **克隆远程仓库**：`git clone 仓库地址`，将远程仓库克隆到本地的当前目录下，相应仓库地址(HTTPS)可以在Github中找到。也可以在Github中直接手动下载到本地。
+   **克隆远程仓库(HTTPS版本)**：`git clone https://github.com/username/repository.git(仓库HTTPS URL)`，将远程仓库克隆到本地的当前目录下，相应仓库地址(HTTPS)可以在Github中找到。也可以在Github中直接手动下载到本地。
 
    **连接远程仓库**：`git remote add origin https://github.com/username/repository.git`，通过HTTPS方式将git与远程仓库建立连接，其中`origin`是默认远程仓库名称，你可以随便取，只是为了有多个远程仓库时本地能够识别是哪个远程仓库，`https://...`远程仓库地址(HTTPS)，将 `username/repository.git` 替换为你的 GitHub 用户名和仓库名称。
 
@@ -99,6 +99,8 @@ Git一个版本控制软件，Git可以在本地托管项目代码，并且通�
    **配置 SSH 公钥**：在自己github账号主页的右上角，点击自己用户头像，选择`Setting-->SSH and GPG keys-->New SSH key`，填写 title 是便于你自己知道这个 ssh 是哪个本地的，在 key 处填写的是 id_rsa.pub 里的内容(以文本方式该文件查看内容)。点击`Add SSH key`，就完成了 SSH 的配置。
    
    **测试SSH连接**：输入`ssh -T git@github.com`，它可能会提示你是否继续连接连接，输入 `yes`，然后它会把GitHub公钥加入 `~/.ssh/known_hosts`，并继续连接，最终显示认证成功。
+   
+   **克隆远程仓库(SSH版本)**：`git clone git@github.com:username/repository.git(仓库SSH URL)`，将远程仓库克隆到本地的当前目录下，`username/repository`改成相应的Github用户名和仓库名。
    
    **连接远程仓库**：`git remote add origin git@github.com:username/repository.git`，将 `username/repository.git` 替换为你的 GitHub 用户名和仓库名称。如果本地仓库尚未关联任何远程仓库时，可以使用该命令添加第一个远程仓库。
    
