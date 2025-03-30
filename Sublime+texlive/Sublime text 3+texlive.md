@@ -172,5 +172,6 @@ https://www.sumatrapdfreader.org/download-free-pdf-viewer
 
 1. 临时显示菜单：`alt`
 2. 输出控制台/输出框：`ctrl + ~`
-3. 
+3. 运行程序：`ctrl + B`
+4. 终止程序：`ctrl + break` 或 菜单栏中选择`Tools-->Cancel Build`
 
