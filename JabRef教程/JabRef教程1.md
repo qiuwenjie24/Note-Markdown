@@ -18,12 +18,12 @@ windows直接点击*JabRef Windows Installer* 下载就完事了。
 
 主界面(5.3版)
 
-![image-20210920152450222](C:\Users\dell\Desktop\JabRef教程\教程1图片\1-1.png).
+![image-20210920152450222](.\教程1图片\1-1.png).
 
 切换中文界面：
 **options-> Preference-> General-> 语言Simplified Chinese, 默认编码UTF-8**
 
-<img src="C:\Users\dell\Desktop\JabRef教程\教程1图片\1-2.png" alt="image-20210920150914321" style="zoom:50%;" />.
+<img src=".\教程1图片\1-2.png" alt="image-20210920150914321" style="zoom:50%;" />.
 
 保存后，重新打开软件才能生效。
 
@@ -33,9 +33,9 @@ windows直接点击*JabRef Windows Installer* 下载就完事了。
 
 #### 新建数据库
 
-<img src="C:\Users\dell\Desktop\JabRef教程\教程1图片\1-3" alt="image-20210920152736210" style="zoom:50%;" />.
+<img src=".\教程1图片\1-3" alt="image-20210920152736210" style="zoom:50%;" />.
 
-<img src="C:\Users\dell\Desktop\JabRef教程\教程1图片\1-4" alt="image-20210920153231516" style="zoom: 25%;" />.
+<img src=".\教程1图片\1-4" alt="image-20210920153231516" style="zoom: 25%;" />.
 
 
 
@@ -45,35 +45,35 @@ windows直接点击*JabRef Windows Installer* 下载就完事了。
 
  从菜单栏中选择**Library → New entry**
 
-<img src="C:\Users\dell\Desktop\JabRef教程\教程1图片\1-5" alt="image-20210920154231325" style="zoom:50%;" />.
+<img src=".\教程1图片\1-5" alt="image-20210920154231325" style="zoom:50%;" />.
 
 选择条目的类型，这里我选择了*Article*。
 
-<img src="C:\Users\dell\Desktop\JabRef教程\教程1图片\1-6" alt="image-20210920154431352" style="zoom:33%;" />.
+<img src=".\教程1图片\1-6" alt="image-20210920154431352" style="zoom:33%;" />.
 
 之后在*Required Fields(必填项)* 中填写相关信息。
 
-![image-20210920154652640](C:\Users\dell\Desktop\JabRef教程\教程1图片\1-7).
+![image-20210920154652640](.\教程1图片\1-7).
 
 其中*citationkey*是最重要的，你可以自己设定个命名规则给每个条目一个citationkey。“citationkey”的概念来自于BibTeX，在BibTeX中，每个条目都必须有且只有一个对应的标识符，即citationkey。
 
 **注意：Bibtexkey是在LaTex中引用该文献的关键字，因此必须和文件中其他文献的key值不同，而且不能出现中文字符，否则会引用失败。**
 
-<img src="C:\Users\dell\Desktop\JabRef教程\教程1图片\1-8" alt="image-20210920155714679" style="zoom:33%;" />.
+<img src=".\教程1图片\1-8" alt="image-20210920155714679" style="zoom:33%;" />.
 
 点击旁边的*generate*也可以自动生成citationkey。默认的格式是：*[auth] [year]*，如上面例子中的 Turing1950 。默认格式也可以在设置中修改(详情自己百度)。
 
 也可以在其他tag上补充更多的信息。这个过程很麻烦，但JabRef可以通过公共数据库来补全其他信息：
 
-<img src="C:\Users\dell\Desktop\JabRef教程\教程1图片\1-9" alt="image-20210920160847667" style="zoom:50%;" />.
+<img src=".\教程1图片\1-9" alt="image-20210920160847667" style="zoom:50%;" />.
 
 选择一个数据库查找条目的信息，
 
-<img src="C:\Users\dell\Desktop\JabRef教程\教程1图片\1-10" alt="image-20210920161345076" style="zoom:50%;" />.
+<img src=".\教程1图片\1-10" alt="image-20210920161345076" style="zoom:50%;" />.
 
 如果找到了其他相关的信息则会弹出对话框，
 
-<img src="C:\Users\dell\Desktop\JabRef教程\教程1图片\1-11" alt="image-20210920162131150" style="zoom:50%;" />.
+<img src=".\教程1图片\1-11" alt="image-20210920162131150" style="zoom:50%;" />.
 
 左侧是原先的信息，右边是搜索到的信息，你可以在相应的行中选择要左边的信息或有点的信息，或者都不要，即*None*，（中间选项）。之后点击 *Merge entries* 合并信息。
 
@@ -81,7 +81,7 @@ windows直接点击*JabRef Windows Installer* 下载就完事了。
 
 2.通过ID添加
 
-<img src="C:\Users\dell\Desktop\JabRef教程\教程1图片\1-12" alt="image-20210920163231755" style="zoom:50%;" />.
+<img src=".\教程1图片\1-12" alt="image-20210920163231755" style="zoom:50%;" />.
 
 3.文本添加 （略）
 
@@ -93,21 +93,21 @@ windows直接点击*JabRef Windows Installer* 下载就完事了。
 
 方法二：**Lookup -> Search **
 
-<img src="C:\Users\dell\Desktop\JabRef教程\教程1图片\1-13" alt="image-20210920170634801" style="zoom: 33%;" />.
+<img src=".\教程1图片\1-13" alt="image-20210920170634801" style="zoom: 33%;" />.
 
 选择路径及相关要求，点击*Search*搜索相应路径下符合要求的文件 ，搜索的结果不包含已在库中的文件。
 
-<img src="C:\Users\dell\Desktop\JabRef教程\教程1图片\1-14" alt="image-20210920171810002" style="zoom:33%;" />.
+<img src=".\教程1图片\1-14" alt="image-20210920171810002" style="zoom:33%;" />.
 
 *Export selected* 会生成一个文件列表的text文件，每行包含一个文件名及其路径，如下图，
 
-<img src="C:\Users\dell\Desktop\JabRef教程\教程1图片\1-15" alt="image-20210920171902015" style="zoom:33%;" />.
+<img src=".\教程1图片\1-15" alt="image-20210920171902015" style="zoom:33%;" />.
 
 点击 *Import* 则会生成生成对应的条目导入库中。
 
 之后会显示导入结果(如下)，如果有导入失败的，可能是由于识别不了pdf某些信息等等，查看原因自行解决，不行就百度
 
-<img src="C:\Users\dell\Desktop\JabRef教程\教程1图片\1-16" alt="image-20210920172800035" style="zoom:50%;" />.
+<img src=".\教程1图片\1-16" alt="image-20210920172800035" style="zoom:50%;" />.
 
 导入的条目可能需要进行一些编辑，因为从PDF文件中收集的所有信息可能不准确。
 
@@ -125,11 +125,11 @@ windows直接点击*JabRef Windows Installer* 下载就完事了。
 
 这里以Google学术为例，
 
-<img src="C:\Users\dell\Desktop\JabRef教程\教程1图片\1-17" alt="image-20210922142210418" style="zoom:33%;" />.
+<img src=".\教程1图片\1-17" alt="image-20210922142210418" style="zoom:33%;" />.
 
-![image-20210922142241312](C:\Users\dell\Desktop\JabRef教程\教程1图片\1-18).
+![image-20210922142241312](.\教程1图片\1-18).
 
-![image-20210922142333986](C:\Users\dell\Desktop\JabRef教程\教程1图片\1-19).
+![image-20210922142333986](.\教程1图片\1-19).
 
 同样地，有时候BibTex文件会有问题，得到的信息不对，这时需要手动修改。
 
@@ -139,11 +139,11 @@ windows直接点击*JabRef Windows Installer* 下载就完事了。
 
 保存成功之后会生成两个文件(bib文件和bib.bak文件），例如
 
-![image-20210922113656264](C:\Users\dell\Desktop\JabRef教程\教程1图片\1-20).（asd是我命名的文件名字)
+![image-20210922113656264](.\教程1图片\1-20).（asd是我命名的文件名字)
 
 用text打开bib.bak会显示数据库中文献的相应代码(标准BibTex代码)，
 
-<img src="C:\Users\dell\Desktop\JabRef教程\教程1图片\1-21" alt="image-20210922114012680" style="zoom: 25%;" />.
+<img src=".\教程1图片\1-21" alt="image-20210922114012680" style="zoom: 25%;" />.
 
 
 
@@ -153,7 +153,7 @@ windows直接点击*JabRef Windows Installer* 下载就完事了。
 
 group 主界面位于左侧的侧窗格，
 
-<img src="C:\Users\dell\Desktop\JabRef教程\教程1图片\1-22" alt="image-20210929110219749" style="zoom: 50%;" />.
+<img src=".\教程1图片\1-22" alt="image-20210929110219749" style="zoom: 50%;" />.
 
 通过**View → Groups interface**或者`Alt + 3`可以开启(关闭)Group的主界面.
 
@@ -161,7 +161,7 @@ group 主界面位于左侧的侧窗格，
 
 可以通过放下方的**Add group**新增一个群。通过右键点击group可以编辑，添加子群等操作。
 
-<img src="C:\Users\dell\Desktop\JabRef教程\教程1图片\1-23" alt="image-20210929112053479" style="zoom:50%;" />.
+<img src=".\教程1图片\1-23" alt="image-20210929112053479" style="zoom:50%;" />.
 
 也可以把已有的entry拖入新建的group，这样就分配给了新的group
 
@@ -209,11 +209,11 @@ group 主界面位于左侧的侧窗格，
 
 1.要推送引文，首先在库中的条目表中选择你想推送的条目。然后点击**Tools ->Push entries to external application**，或者快捷键CTRL + L，或者点击图标。
 
-<img src="C:\Users\dell\Desktop\JabRef教程\教程1图片\1-24" alt="image-20210922145752151" style="zoom:33%;" />.
+<img src=".\教程1图片\1-24" alt="image-20210922145752151" style="zoom:33%;" />.
 
 一般情况 下，默认的外部编辑器是TeXstudio。可以通过**Options ->Preferences -> External programs**修改成其他的编辑器。似乎这个功能只支持列表中有的编辑器(Emacs ,Lyx, Texmake, TeXstudio,Vim,WinEdt)。
 
-<img src="C:\Users\dell\Desktop\JabRef教程\教程1图片\1-25" alt="image-20210922150043596" style="zoom:50%;" />.
+<img src=".\教程1图片\1-25" alt="image-20210922150043596" style="zoom:50%;" />.
 
 **八种LaTex中参考文献标准样式：**
 
