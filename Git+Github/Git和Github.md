@@ -86,7 +86,7 @@ Git一个版本控制软件，Git可以在本地托管项目代码，并且通�
 
    **连接远程仓库**：`git remote add origin https://github.com/username/repository.git`，通过HTTPS方式将git与远程仓库建立连接，其中`origin`是默认远程仓库名称，你可以随便取，只是为了有多个远程仓库时本地能够识别是哪个远程仓库，`https://...`远程仓库地址(HTTPS)，将 `username/repository.git` 替换为你的 GitHub 用户名和仓库名称。
 
-   **推送至远程仓库**：`git push -u origin main`，首次将本地仓库提交到远程仓库，`origin`就是刚才你给远程仓库起的名字；`main`就是要推送的本地分支，一般可以在路径看到当前的分支，如`~/Desktop/git_new (main)`中的`main`；`-u`表示上传`main`分支并与远程仓库中相应的分支进行合并，并把`origin main`记录为默认，后续再提交到远程仓库只需要`git push`即可。
+   **推送至远程仓库**：`git push -u origin main`，首次将本地仓库提交到远程仓库，`origin`就是刚才你给远程仓库起的名字；`main`就是要推送的本地分支，一般可以在路径看到当前的分支，如`~/Desktop/git_new (main)`中的`main`，有点电脑默认分支是`master`；`-u`表示上传`main`分支并与远程仓库中相应的分支进行合并，并把`origin main`记录为默认，后续再提交到远程仓库只需要`git push`即可。
    
    ==注意==：你在执行上述操作中，可能每次传输它会弹出窗口要你输入github账号密码并授权，这是因为我们采用的是HTTPS方式传输。如果不想每次输入密码，或者和他人合作你需要给别人上传远程的权限，这时可以采用SSH加密传输，具体操作看下面。
 
@@ -146,6 +146,15 @@ Fork：可以克隆别人的仓库到自己仓库中
 Issue：可以通过issue对该仓库提一些建议
 
 Pull require：请求别人是否同意把自己的仓库合并或更新到对方的原来仓库中
+
+
+
+### 创建仓库
+
+- 点击右上角 `+` 按钮，选择 `New repository`。
+- 填写仓库信息，点击 `Create repository` 完成创建，之后会自动跳转到新仓库的页面。
+
+
 
 
 
