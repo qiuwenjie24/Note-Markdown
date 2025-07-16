@@ -112,18 +112,22 @@ Git一个版本控制软件，Git可以在本地托管项目代码，并且通�
 
    远程仓库的代码有更新，你希望同步到本地，可以使用以下命令：
 
-   **(1).**`git fetch` + `git merge`：使用`git fetch origin`获取远程仓库最新更改，`git merge origin/main`将远程仓库的 `main` 分支合并到**当前所在**的本地分支。
+   - `git fetch` + `git merge`：使用`git fetch origin`获取名为`origin`的远程仓库最新更改，`git merge origin/main`将远程仓库的 `main` 分支合并到**当前所在**的本地分支。可以通过 `git merge origin/main -m "Merge remote changes into local branch"` 来指定合并说明。
 
-   **(2).**`git pull origin main`：将远程仓库(origin)的`main`分支同步到本地。两种方式等价，`git pull` = `git fetch` + `git merge`。
+   - `git pull origin main`：将远程仓库(origin)的`main`分支同步到本地。两种方式等价，`git pull` = `git fetch` + `git merge`。如果不加`origin main`，则是从当前关联的远程仓库拉取更新，并自动尝试解决冲突。
 
-   **(3).**`git pull origin main -m "Merge remote changes into local branch"`，可以使用`-m`选项提交这次合并的目的。如果不使用`-m`，Git 会弹出一个`vim`编辑器界面需要你解释为什么这次合并是必要的，按 `Esc` 键回到命令行模式，输入 `:q!` 然后按 `Enter` 键，直接退出编辑器。
+   注：有些时候，如果发生合并(同步)，Git 会弹出一个编辑器界面（通常是`vim`）让你输入本次合并提交的信息，可以按 `Esc` 键回到命令行模式，输入 `:q!` 然后按 `Enter` 键，直接退出编辑器。
 
 
 
 ### 其他
 
-1. 修改本地分支名称。`git branch -m master main`，将当前分支`master`重命名为`main`。
-2. 将本地指定分支推送到远程指定分支。`git push origin master:main`，将本地 `master` 推送到远程 `main`
+1. 修改本地分支名称：`git branch -m master main`，将当前分支`master`重命名为`main`。
+2. 将本地指定分支推送到远程指定分支：`git push origin master:main`，将本地 `master` 推送到远程 `main`
+3. 比较本地仓库和远程仓库的版本差异：获取远程最新信息`git fetch origin`，查看状态`git status`，
+   - 如果显示 `Your branch is up to date with 'origin/分支名'`，说明本地和远程一致。
+   - 如果显示 `Your branch is behind 'origin/分支名' by X commit(s)`，说明远程有更新。
+   - 如果显示 `Your branch is ahead of 'origin/分支名' by X commit(s)`，说明本地有未推送的提交。
 
 ## Github
 
