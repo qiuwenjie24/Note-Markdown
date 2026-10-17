@@ -119,8 +119,24 @@ Git一个版本控制软件，Git可以在本地托管项目代码，并且通�
    - `git pull origin main`：将远程仓库(origin)的`main`分支同步到本地。两种方式等价，`git pull` = `git fetch` + `git merge`。如果不加`origin main`，则是从当前关联的远程仓库拉取更新，并自动尝试解决冲突。
 
    注：有些时候，如果发生合并(同步)，Git 会弹出一个编辑器界面（通常是`vim`）让你输入本次合并提交的信息，可以按 `Esc` 键回到命令行模式，输入 `:q!` 然后按 `Enter` 键，直接退出编辑器。
+   
+8. **撤销改动**
 
+   **撤回git commit的文件**：
 
+   - `git reset --soft HEAD~1`：把最近 1 次提交（还未push）的文件撤回到暂存区（相当于回到了"已经 git add 但还没 git commit"的状态）。取消 2 次则改成 `git reset --soft HEAD~2`。
+   - `git reset HEAD~1`：把最近 1 次提交（还未push）的文件撤回到未暂存区（还没 git add的状态）。取消 2 次则改成 `git reset HEAD~2`。
+   - 把最近 1 次加入暂存区（还未commit）的文件撤回到未暂存区。
+
+   **撤回暂存区的文件**：
+
+   ```bash
+   git reset HEAD 文件名        # 取消某一个文件的暂存
+   git reset HEAD .             # 取消当前目录下所有文件的暂存
+   git reset                    # 等价于 git reset HEAD，取消所有暂存
+   ```
+
+   
 
 ### 其他
 
